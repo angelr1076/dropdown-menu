@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --white: #fff;
+  --black: #000;
+  --black-blur: #19222e;
+  --black-faded: #233142;
+  --charcoal: #455d7a;
+  --coral: #f95959;
+  --lightgray: #e3e3e3;
+  --vanilla: #F2ECE4;
+  --brickblue: #b2c9d8;
+  --bluehover: #ccdfeb;
+  --salmon: rgba(250, 128, 114, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  font-family: var(--poppins);
+  text-transform: capitalize;
+}
+
+.navbar-container {
+  padding-top: 1em;
+  margin-left: 1em;
+}
+
+.fa-bars {
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  animation: hidemenu 0.8s ease-in-out;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+@keyframes hidemenu {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1;
+}
+
+.main h1 {
+  padding-bottom: 0.5em;
+}
+
+.main img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
